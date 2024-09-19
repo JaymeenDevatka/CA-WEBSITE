@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/download.jpeg" type="image/png">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="career.css">
+</head> 
+<body>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left" enctype="multipart/form-data">
+            <div class="contact-left-title">
+                <h2>Career</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="1005907c-9882-45ef-9060-3dac110b218a">
+            <input type="text" name="name" placeholder="Your name: " class="contact-inputs" required>
+            <input type="phone" name="phone" placeholder="Your phone: " class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your email: " class="contact-inputs" required>
+            <textarea name="message" placeholder="your message: " class="contact-inputs" required></textarea>
+            
+            <!-- File upload for resume -->
+            <!-- <input type="email" name="email" placeholder="Your Resume Below: " class="contact-inputs"> -->
+            <input type="file" name="resume" placeholder="Your Resume Below:↓ " class="contact-inputs" accept=".pdf,.doc,.docx" required>
+            
+            <button type="submit">Submit <img src="images/arrow_icon.png" alt=""></button>
+        </form>
+        <div class="contact-right">
+            <img src="/images/right_img.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
